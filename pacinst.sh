@@ -2,4 +2,4 @@ sudo pacman -S pulseaudio pulseaudio-alsa xorg xorg-xinit xorg-server udisks2 gv
 #starting of the exec codes
 echo "exec startpalsma-x11" >> ~/.xinitrc
 #systemctl service
-systemctl enable sddm.service
+systemctl enable sddm.service && systemctl start sddm
