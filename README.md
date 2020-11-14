@@ -6,7 +6,7 @@ A simple install script that installs the KDE desktop environement and some more
 
 Enter these into the terminal:
 
-git clone https://github.com/enzideli/for_ketsu
+git clone https://github.com/enziaki/for_ketsu
 
 cd for_ketsu
 
