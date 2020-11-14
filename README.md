@@ -1,3 +1,13 @@
 # For_Ketsu
 
 A simple install script that installs the KDE desktop environement and some more apps on arch linux.
+
+# Installation
+
+Enter these into the terminal:
+
+git clone https://github.com/enzideli/for_ketsu
+
+cd for_ketsu
+
+./pacinst.sh
