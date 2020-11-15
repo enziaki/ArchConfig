@@ -1,0 +1,62 @@
+# Extra after installing the base system
+
+
+You can use the arrow keys to navigate UwU
+
+
+
+Okay so after you've run the script and now have some more basic packages installed, I wanted to let you know
+about some things.
+
+You will need an Aur helper like yay or trizen, I'd personally recommend yay.
+
+After you've installed yay, You can run this command for some packages that I'd like you to have because
+they are dependent on my Awesome( Window manager) rice.
+
+#Instructions to install yay
+
+""""git must be installed""""
+
+Paste these into the terminal after you have started the GUI (we'll get to it later)
+
+1>  cd /opt
+2> sudo git clone https://aur.archlinux.org/yay-git.git
+3> sudo chown -R  yourusernamehere ./yay-git
+4> cd yay-git
+5> makepkg -si
+
+That's it, you've installed yay. Pat yourself on the back.
+
+#Now run this command
+
+yay -S i3lock-fancy-git light-git liketaskmanager-git teams
+
+
+
+What do they do?
+
+i3lock-fancy-git = This is my screen locker
+
+Light-git = Used for controlling the brightness from the top bar, just scroll on the widget for changing brightness
+
+liketaskmanager-git = It's a windows like task manager just to keep in case the terminal becomes confusing
+
+teams = Microsoft teams
+
+
+Now you've installed all the required packages.
+
+The only thing that remians is to start the GUI or Graphical session
+
+#type this into the terminal
+
+startx
+
+
+
+
+
+you can find this file in your home folder with the name for_ketsu. Then just open the extra.txt to get back to
+it anytime.
+
+And now to exit this file you just press q
