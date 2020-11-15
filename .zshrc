@@ -1,5 +1,5 @@
 # Lines configured by zsh-newuser-install
-PROMPT='%~ >'
+PROMPT='%~> '
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000000
 SAVEHIST=100000
