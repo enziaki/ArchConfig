@@ -12,3 +12,5 @@ zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+#aliases
+alias b='bashtop'
