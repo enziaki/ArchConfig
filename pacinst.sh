@@ -6,4 +6,5 @@ echo "exec startpalsma-x11" >> ~/.xinitrc
 #systemctl service
 systemctl enable sddm.service && systemctl start sddm
 echo "You need to enable multilib which will let you install steam and wine. It's in /etc/pacman.conf"
+less extra.txt
 
