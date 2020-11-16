@@ -14,3 +14,5 @@ compinit
 # End of lines added by compinstall
 #aliases
 alias b='bashtop'
+alias suspend='systemctl suspend -i'
+alias weather='curl wttr.in'
