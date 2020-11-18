@@ -56,7 +56,7 @@ startx
 
 
 
-you can find this file in your home folder with the name for_ketsu. Then just open the extra.txt to get back to
+you can find this file in your home folder in the for_ketsu folder with the name extra.txt. Then just open the extra.txt to get back to
 it anytime.
 
 And now to exit this file you just press q
