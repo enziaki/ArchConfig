@@ -4,7 +4,7 @@ neofetch | lolcat
 echo "Now I will enable some services which will ask you for your password so be prepared UwU" | lolcat
 echo "exec startpalsma-x11" >> ~/.xinitrc
 #systemctl service
-systemctl enable sddm.service && systemctl start sddm
+systemctl enable sddm
 echo "You need to enable multilib which will let you install steam and wine. It's in /etc/pacman.conf" | lolcat
 less extra.txt
 
