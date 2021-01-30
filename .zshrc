@@ -16,3 +16,8 @@ compinit
 alias b='bashtop'
 alias suspend='systemctl suspend -i'
 alias weather='curl wttr.in'
+alias gp='git push'
+alias gm='git commit -m'
+alias gs='git status'
+alias gl='git log'
+alias ga='git add'
