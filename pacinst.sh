@@ -1,4 +1,4 @@
-sudo pacman -Sy pulseaudio pulseaudio-alsa xorg xorg-xinit xorg-server udisks2 gvfs gvfs-mtp pcmanfm kitty bashtop firefox youtube-dl xterm vlc vim unzip unrar thermald tlp scrot rofi nitrogen picom ntfs-3g gtkimageview alsa-utils neofetch lolcat handbrake gimp figlet playerctl kdeconnect awesome plasma-meta sddm sshfs ttf-sazanami discord zsh acpi python lxappearance libreoffice-fresh 
+sudo pacman -Syyu pulseaudio pulseaudio-alsa xorg xorg-xinit xorg-server udisks2 gvfs gvfs-mtp pcmanfm kitty bashtop firefox youtube-dl xterm vlc vim unzip unrar thermald tlp scrot rofi nitrogen picom ntfs-3g gtkimageview alsa-utils neofetch lolcat handbrake gimp figlet playerctl kdeconnect awesome plasma-meta sddm sshfs ttf-sazanami discord zsh acpi python lxappearance libreoffice-fresh 
 #starting of the exec codes
 neofetch | lolcat
 echo "Now I will enable some services which will ask you for your password so be prepared UwU" | lolcat
