@@ -20,7 +20,7 @@ wget https://dl.suckless.org/st/st-0.8.4.tar.gz
 tar -xpvf dwm-6.2
 tar -xpvf st-0.8.4
 #just extracting because dwm may require some xorg headers that may or may not be installed on your system
-#For installing refer to less.txt
+#For installing refer to extra.txt
 exit
 less extra.txt
 
