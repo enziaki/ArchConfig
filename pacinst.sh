@@ -17,5 +17,7 @@ chsh -s /usr/bin/zsh
 wget https://dl.suckless.org/dwm/dwm-6.2.tar.gz
 tar -xpvf dwm-6.2
 #just extracting because dwm may require some xorg headers that may or may not be installed on your system
+#For installing refer to less.txt
+exit
 less extra.txt
 
