@@ -1,21 +1,21 @@
 # Extra after installing the base system
 
 
-You can use the arrow keys to navigate UwU
+You can use the arrow keys to navigate
 
 
 
 Okay so after you've run the script and now have some more basic packages installed, I wanted to let you know
 about some things.
 
-You will need an Aur helper like yay or trizen, I'd personally recommend yay.
+You will need an AUR helper like yay or trizen, I'd personally recommend yay.
 
 After you've installed yay, You can run this command for some packages that I'd like you to have because
-they are dependent on my Awesome( Window manager) rice.
+they are dependent on my Awesome( Window manager) rice. Although I will also make the script download dwm because why not.
 
 #Instructions to install yay
 
-""""git must be installed""""
+                        ********* git must be installed *********
 
 Paste these into the terminal after you have started the GUI (we'll get to it later)
 
@@ -44,6 +44,32 @@ liketaskmanager-git = It's a windows like task manager just to keep in case the 
 teams = Microsoft teams
 
 
+
+                            *********** Installing DWM **************
+                            
+                            
+Now you are ready to install DWM (The dynamic window manager)
+
+1> cd to the folder where the tar file of dwm was extracted.
+    i.e - `cd ~/for_ketsu/dwm-6.2`
+
+2> You need to install dwm from the sources, which means compiling and editing the source code
+    i.e - `sudo make install`
+
+3> DWM uses ST as it's default terminal. You need to download that too which is already done by the script.
+
+4> Go to the ST folder.
+    i.e - `cd ~/for_ketsu/st-0.8.4`
+
+5> Same goes with ST as with DWM. You need to compile from the source
+    i.e - `sudo make install`
+    
+ Done!
+ Now you have installed everything that I wanted you to. These are just steps that you can comeback to at anytime. After you are done with the graphical session, open up a terminal and try these.
+ 
+ 
+ 
+ 
 Now you've installed all the required packages.
 
 The only thing that remians is to start the GUI or Graphical session
