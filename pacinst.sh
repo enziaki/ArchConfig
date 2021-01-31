@@ -14,6 +14,7 @@ touch ~/.zsh_history
 #Changing the shell to zsh from bash
 chsh -s /usr/bin/zsh
 #Installing dwm even though you have KDE installed
+echo "Downloading DWM in `pwd`. For installing refer to extra.txt"
 wget https://dl.suckless.org/dwm/dwm-6.2.tar.gz
 tar -xpvf dwm-6.2
 #just extracting because dwm may require some xorg headers that may or may not be installed on your system
