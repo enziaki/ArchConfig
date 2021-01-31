@@ -8,5 +8,6 @@ systemctl enable sddm
 echo "You need to enable multilib which will let you install steam and wine. It's in /etc/pacman.conf" | lolcat
 echo "Current user: `whoami`"
 cp .zshrc ~/
+touch ~/.zsh_history
 less extra.txt
 
