@@ -1,6 +1,6 @@
 echo "The script will now ask you for your sudo password."
 sudo su
-pacman -Syyu pulseaudio pulseaudio-alsa xorg xorg-xinit xorg-server steam wine nvidia nvidia-prime nmcli nvidia-utils nvidia-settings mesa-demos wget udisks2 gvfs gvfs-mtp pcmanfm kitty bashtop firefox youtube-dl xterm vlc gvim unzip unrar thermald tlp scrot rofi nitrogen picom ntfs-3g gtkimageview alsa-utils neofetch lolcat handbrake gimp figlet playerctl kdeconnect sshfs ttf-sazanami discord zsh acpi python lxappearance libreoffice-fresh dunst 
+pacman -Syyu xorg-xrandr pulseaudio pulseaudio-alsa xorg xorg-xinit xorg-server steam wine nvidia nvidia-prime nmcli nvidia-utils nvidia-settings mesa-demos wget udisks2 gvfs gvfs-mtp pcmanfm kitty bashtop firefox youtube-dl xterm vlc gvim unzip unrar thermald tlp scrot rofi nitrogen picom ntfs-3g gtkimageview alsa-utils neofetch lolcat handbrake gimp figlet playerctl kdeconnect sshfs ttf-sazanami discord zsh acpi python lxappearance libreoffice-fresh dunst 
 #starting of the exec codes
 neofetch | lolcat
 echo "Now I will enable some services which will ask you for your password so be prepared UwU" | lolcat
