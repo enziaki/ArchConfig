@@ -1,6 +1,6 @@
 # For_Ketsu
 
-A simple install script that installs the KDE desktop environment and some more apps on arch linux.
+A simple install script that installs basics apps on arch linux
 
 # Installation
 
