@@ -2,7 +2,7 @@
 
 A simple install script that installs basics apps on arch linux
 
-# Installation
+## Installation
 
 Enter these into the terminal:
 
@@ -21,3 +21,10 @@ Changing the permissions
 `./pacinst.sh`
 
 Executing the script.
+
+
+## Awesome WM theme and config
+
+the theme file needs to be copied in `/usr/share/awesome/themes/default/` while the config file needs to be copied into `~/.config/awesome/`
+
+Reload the window manager and it would work.
