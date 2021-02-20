@@ -29,7 +29,7 @@ That's it, you've installed yay. Pat yourself on the back.
 
 #Now run this command
 
-yay -S i3lock-fancy-git light-git liketaskmanager-git teams
+yay -S i3lock-fancy-rapid-git 
 
 
 
@@ -37,11 +37,7 @@ What do they do?
 
 i3lock-fancy-git = This is my screen locker
 
-Light-git = Used for controlling the brightness from the top bar, just scroll on the widget for changing brightness
 
-liketaskmanager-git = It's a windows like task manager just to keep in case the terminal becomes confusing
-
-teams = Microsoft teams
 
 
 
