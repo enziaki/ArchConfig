@@ -19,26 +19,25 @@ they are dependent on my Awesome( Window manager) rice. Although I will also mak
 
 Paste these into the terminal after you have started the GUI (we'll get to it later)
 
-1>  cd /opt
-2> sudo git clone https://aur.archlinux.org/yay-git.git
-3> sudo chown -R  yourusernamehere ./yay-git
-4> cd yay-git
-5> makepkg -si
+Yay will be there when you go to install it personally as the script used the git clone to clone it to the directory.
+
+To install yay you must cd into the folder and then type the install command like this
+
+cd yay-git
+makepkg -si
+
+
 
 That's it, you've installed yay. Pat yourself on the back.
 
 #Now run this command
 
-yay -S i3lock-fancy-rapid-git 
+yay -S i3lock-fancy-rapid-git tuxi-git  
 
 
-
-What do they do?
-
+functions: 
 i3lock-fancy-git = This is my screen locker
-
-
-
+tuxi-git = Maybe not even useful but I like it as it helps you google something straight from the terminal
 
 
                             *********** Installing DWM **************
