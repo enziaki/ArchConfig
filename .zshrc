@@ -14,7 +14,7 @@ compinit
 # End of lines added by compinstall
 #aliases
 alias b='bashtop'
-alias suspend='systemctl suspend -i'
+alias spnd='i3lock-fancy-rapid 9 30 && systemctl suspend -i'
 alias weather='curl wttr.in'
 alias gp='git push'
 alias gm='git commit -m'
@@ -27,4 +27,6 @@ alias search='yay -Ss'
 alias python='python3'
 alias p='python3'
 alias upgrade='sudo pacman -Syyu'
-
+# Create a todo txt file using edittodo first
+alias todo='cat /home/`whoami`/.todo.txt'
+alias edittodo='vim /home/`whoami`/.todo.txt'
