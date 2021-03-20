@@ -15,6 +15,8 @@ wget https://dl.suckless.org/dwm/dwm-6.2.tar.gz
 wget https://dl.suckless.org/st/st-0.8.4.tar.gz
 tar -xzvf dwm-6.2.tar.gz
 tar -xzvf st-0.8.4.tar.gz
+# Cloning yay-git 
+git clone https://aur.archlinux.org/yay-git.git
 #just extracting because dwm may require some xorg headers that may or may not be installed on your system
 #For installation refer to extra.txt
 less extra.txt
