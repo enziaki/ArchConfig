@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ---------------------------
+=======
+-------------------------
+>>>>>>> 0064818 (Commitment from a new directory)
 -- Default awesome theme --
 ---------------------------
 
@@ -11,6 +15,7 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
+<<<<<<< HEAD
 theme.font          = "sans 8"
 
 theme.bg_normal     = "#11111107"
@@ -18,6 +23,15 @@ theme.bg_focus      = "#22222203"
 theme.bg_urgent     = "#ff0000"
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = "#222222" 
+=======
+theme.font          = "System-ui Bold 8"
+
+theme.bg_normal     = "#282828"
+theme.bg_focus      = "#3c3836"
+theme.bg_urgent     = "#ff0000"
+theme.bg_minimize   = "#504945"
+theme.bg_systray    = "#282828" 
+>>>>>>> 0064818 (Commitment from a new directory)
 
 theme.fg_normal     = "#aaaaaa"
 theme.fg_focus      = "#ffffff"
@@ -44,6 +58,7 @@ theme.border_marked = "#91231c"
 theme.hotkeys_bg_opacity = 1.0
 
 
+<<<<<<< HEAD
 --Tasklist (Making mid portion of the wibar transparent)
  -- theme.tasklist_bg_focus = "#22222207"
 
@@ -55,6 +70,20 @@ theme.taglist_bg_occupied = "#222222"
 theme.taglist_bg_focus = "#333333"
 
 
+=======
+--[[Tasklist (Making mid portion of the wibar transparent)
+theme.tasklist_bg_focus = "#22222207"
+theme.tasklist_fg_focus = "#22222207"
+]]
+
+
+--Taglist
+--[[theme.taglist_bg_empty = "#222222"
+	theme.taglist_bg_occupied = "#222222"
+theme.taglist_bg_focus = "#333333"
+
+]]
+>>>>>>> 0064818 (Commitment from a new directory)
 --mytextclock
 
 
@@ -75,9 +104,15 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 -- notification_[border_color|border_width|shape|opacity]
 
 --Notification themeing
+<<<<<<< HEAD
 theme.notification_bg = "#222222"
 theme.notification_width = 320
 theme.notification_height = 252 
+=======
+theme.notification_bg = "#222822"
+theme.notification_width = 320
+theme.notification_height = 128 
+>>>>>>> 0064818 (Commitment from a new directory)
 theme.notification_opacity = 0.85 
 
 -- Variables set for theming the menu:

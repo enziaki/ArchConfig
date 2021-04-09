@@ -12,6 +12,14 @@ zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+<<<<<<< HEAD
+=======
+
+cat /home/enzi/.cache/wal/sequences
+
+
+
+>>>>>>> 0064818 (Commitment from a new directory)
 #aliases
 alias b='bashtop'
 alias spnd='i3lock-fancy-rapid 9 30 && systemctl suspend -i'
@@ -27,6 +35,16 @@ alias search='yay -Ss'
 alias python='python3'
 alias p='python3'
 alias upgrade='sudo pacman -Syyu'
+<<<<<<< HEAD
 # Create a todo txt file using edittodo first
 alias todo='cat /home/`whoami`/.todo.txt'
 alias edittodo='vim /home/`whoami`/.todo.txt'
+=======
+alias todo='cat /home/`whoami`/.fuck.txt'
+# edittodo can be used to create  the hidden text file and can be manipulated easily
+alias edittodo='vim /home/`whoami`/.fuck.txt'
+alias bruh='clear'
+
+# Spawns
+date
+>>>>>>> 0064818 (Commitment from a new directory)

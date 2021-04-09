@@ -47,7 +47,11 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+<<<<<<< HEAD
 beautiful.useless_gap = 10 
+=======
+beautiful.useless_gap = 5 
+>>>>>>> 0064818 (Commitment from a new directory)
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
 editor = os.getenv("EDITOR") or "nano"
@@ -185,8 +189,13 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
+<<<<<<< HEAD
     s.mywibox = awful.wibar({ position = "top", screen = s })
 
+=======
+    s.mywibox = awful.wibar({ position = "bottom", screen = s, height = 25, })
+    
+>>>>>>> 0064818 (Commitment from a new directory)
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
@@ -194,16 +203,28 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
        --     mylauncher,
             s.mytaglist,
+<<<<<<< HEAD
+=======
+	    wibox.widget.textbox(" |   "),
+>>>>>>> 0064818 (Commitment from a new directory)
             s.mypromptbox,
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
 --            mykeyboardlayout,
+<<<<<<< HEAD
             s.mylayoutbox,
 	    wibox.widget.textbox(" | "),
             wibox.widget.systray(),
 	    wibox.widget.textbox(" | "),
+=======
+	    wibox.widget.textbox(" |   "),
+            s.mylayoutbox,
+	    wibox.widget.textbox(" |   "),
+            wibox.widget.systray(),
+	    wibox.widget.textbox(" |   "),
+>>>>>>> 0064818 (Commitment from a new directory)
 	    mytextclock,
         },
     }
@@ -264,9 +285,15 @@ globalkeys = gears.table.join(
      {description = "Screen Locker", group = "Custom"}),
 
 
+<<<<<<< HEAD
      -- rofi     
     awful.key({ modkey, }, "/", function () awful.spawn.with_shell("rofi -show run")    end,
      {description = "rofi babyyyy", group = "Custom"}),
+=======
+     --rofi 
+    awful.key({ modkey, }, "/", function () awful.spawn.with_shell("rofi -show run")    end,
+     {description = "dmenu", group = "Custom"}),
+>>>>>>> 0064818 (Commitment from a new directory)
  
 
 
@@ -518,7 +545,11 @@ awful.rules.rules = {
           "Wpa_gui",
           "veromix",
           "xtightvncviewer",
+<<<<<<< HEAD
   	  "pavucontrol",},
+=======
+  	  "Volume Control",},
+>>>>>>> 0064818 (Commitment from a new directory)
 
 
         -- Note that the name property shown in xprop might be set slightly after creation of the client
@@ -606,6 +637,23 @@ end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+<<<<<<< HEAD
+=======
+
+-- Transparency shit that I copied from arch wiki
+
+
+client.connect_signal("focus", function(c)
+                              c.border_color = beautiful.border_focus
+                              c.opacity = 1
+                           end)
+client.connect_signal("unfocus", function(c)
+                                c.border_color = beautiful.border_normal
+                                c.opacity = 0.75
+                             end)
+
+
+>>>>>>> 0064818 (Commitment from a new directory)
 -- }}}
 --
 --
@@ -613,6 +661,13 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("/usr/bin/kdeconnect-indicator")
 awful.spawn.with_shell("xfce4-power-manager")
+<<<<<<< HEAD
 awful.spawn.with_shell("pnmixer")
 awful.spawn.with_shell("nm-applet")
 -- awful.spawn.with_shell("pasystray")
+=======
+awful.spawn.with_shell("volumeicon")
+awful.spawn.with_shell("nm-applet")
+awful.spawn.with_shell("picom")
+awful.spawn.with_shell("parcellite")
+>>>>>>> 0064818 (Commitment from a new directory)

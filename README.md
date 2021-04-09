@@ -21,3 +21,7 @@ sudo chmod +x pacinst.sh
 the theme file needs to be copied in `/usr/share/awesome/themes/default/` while the config file needs to be copied into `~/.config/awesome/`
 
 **THE CONFIG IS NOT RECOMMENDED AS IT IS BROKEN IN TERMS OF TRANSPARENCY**
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0064818 (Commitment from a new directory)
