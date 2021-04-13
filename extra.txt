@@ -19,7 +19,6 @@ they are dependent on my Awesome( Window manager) rice. Although I will also mak
 
 Paste these into the terminal after you have started the GUI (we'll get to it later)
 
-<<<<<<< HEAD
 Yay will be there when you go to install it personally as the script used the git clone to clone it to the directory.
 
 To install yay you must cd into the folder and then type the install command like this
@@ -60,7 +59,6 @@ i3lock-fancy-git = This is my screen locker
 
 
 
->>>>>>> 0064818 (Commitment from a new directory)
 
 
                             *********** Installing DWM **************
