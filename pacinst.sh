@@ -1,5 +1,5 @@
 
-sudo pacman -Syyu xorg-xrandr xorg-xsetroot nvidia-dkms nomacs rust xfce4-power-manager xfce4-screenshooter cargo-bloat ttf-font-awesome pavucontrol volumeicon awesome feh pulseaudio pulseaudio-alsa xorg xorg-xinit xorg-server steam wine nvidia nvidia-prime nvidia-utils nvidia-settings mesa-demos wget udisks2 gvfs gvfs-mtp pcmanfm kitty bashtop firefox youtube-dl xterm vlc gvim unzip file-roller unrar thermald tlp scrot rofi nitrogen picom ntfs-3g alsa-utils neofetch lolcat handbrake gimp figlet playerctl kdeconnect sshfs ttf-sazanami discord zsh acpi python lxappearance libreoffice-fresh dunst 
+sudo pacman -Syyu xorg-xrandr xorg-xsetroot nvidia-dkms parcellite nomacs rust xfce4-power-manager xfce4-screenshooter cargo-bloat ttf-font-awesome pavucontrol volumeicon awesome feh pulseaudio pulseaudio-alsa xorg xorg-xinit xorg-server steam wine nvidia nvidia-prime nvidia-utils nvidia-settings mesa-demos wget udisks2 gvfs gvfs-mtp pcmanfm kitty bashtop firefox youtube-dl xterm vlc gvim unzip file-roller unrar thermald tlp scrot rofi nitrogen picom ntfs-3g alsa-utils neofetch lolcat handbrake gimp figlet playerctl kdeconnect sshfs ttf-sazanami discord zsh acpi python lxappearance libreoffice-fresh dunst 
 
 #starting of the exec codes
 neofetch | lolcat
