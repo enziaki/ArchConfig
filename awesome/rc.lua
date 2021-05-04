@@ -246,11 +246,11 @@ globalkeys = gears.table.join(
 
 
      -- Volume control
-     awful.key({ modkey }, "v", function () awful.spawn.with_shell("pavucontrol") end,
+     awful.key({ modkey }, "v", function () awful.spawn.with_shell("myxer") end,
      {description = "Volume control", group = "Custom"}),
 
      --File manager
-    awful.key({ modkey, }, "f", function () awful.spawn.with_shell("pcmanfm")    end,
+    awful.key({ modkey, }, "f", function () awful.spawn.with_shell("nautilus")    end,
      {description = "File manager", group = "Custom"}),
 
      --google chrome for teams
@@ -520,7 +520,7 @@ awful.rules.rules = {
           "Wpa_gui",
           "veromix",
           "xtightvncviewer",
-  	  "Volume Control",},
+  	  "steam",},
 
 
         -- Note that the name property shown in xprop might be set slightly after creation of the client
@@ -631,5 +631,5 @@ awful.spawn.with_shell("/usr/bin/kdeconnect-indicator")
 awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn.with_shell("volumeicon")
 awful.spawn.with_shell("nm-applet")
-awful.spawn.with_shell("picom")
+awful.spawn.with_shell("compton -b")
 awful.spawn.with_shell("parcellite")
