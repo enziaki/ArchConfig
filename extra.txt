@@ -38,12 +38,7 @@ yay -S i3lock-fancy-rapid-git tuxi-git
 functions: 
 i3lock-fancy-git = This is my screen locker
 tuxi-git = Maybe not even useful but I like it as it helps you google something straight from the terminal
-=======
-1>  cd /opt
-2> sudo git clone https://aur.archlinux.org/yay-git.git
-3> sudo chown -R  yourusernamehere ./yay-git
-4> cd yay-git
-5> makepkg -si
+
 
 That's it, you've installed yay. Pat yourself on the back.
 
