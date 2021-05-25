@@ -20,9 +20,9 @@ sudo chmod +x pacinst.sh
 
 the theme file needs to be copied in `/usr/share/awesome/themes/default/` while the config file needs to be copied into `~/.config/awesome/`
 
-This is not the only way to do this and this is not even the recommended way to do this.
-This will override your theme.lua that was given by default on the system.
+*This is not the only way to do this and this is not even the recommended way to do this.*
+*This will override your theme.lua that was given by default on the system.*
 
-Use this with caution!
+**Use this with caution!**
 
 
