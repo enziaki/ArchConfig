@@ -13,11 +13,11 @@ local theme = {}
 
 theme.font          = "System-ui Bold 8"
 
-theme.bg_normal     = "#282828"
-theme.bg_focus      = "#3c3836"
+theme.bg_normal     = "#000000"
+theme.bg_focus      = "#111111"
 theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#504945"
-theme.bg_systray    = "#282828" 
+theme.bg_minimize   = "#222222"
+theme.bg_systray    = "#000000" 
 
 theme.fg_normal     = "#aaaaaa"
 theme.fg_focus      = "#ffffff"
@@ -76,7 +76,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 -- notification_[border_color|border_width|shape|opacity]
 
 --Notification themeing
-theme.notification_bg = "#222822"
+theme.notification_bg = "#000000"
 theme.notification_width = 320
 theme.notification_height = 128 
 theme.notification_opacity = 0.85 

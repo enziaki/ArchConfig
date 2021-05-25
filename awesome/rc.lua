@@ -627,9 +627,9 @@ client.connect_signal("unfocus", function(c)
 --
 -- Shell spawn
 awful.spawn.with_shell("nitrogen --restore")
-awful.spawn.with_shell("/usr/bin/kdeconnect-indicator")
+awful.spawn.with_shell("multiload-ng-systray")
 awful.spawn.with_shell("xfce4-power-manager")
-awful.spawn.with_shell("volumeicon")
+awful.spawn.with_shell("pnmixer")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("compton -b")
 awful.spawn.with_shell("parcellite")
