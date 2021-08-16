@@ -1,6 +1,7 @@
 # For_Ketsu
 
 A simple install script that installs basic apps on arch linux
+**NEEDS OVRHAUL!! OUTDATED WORKFLOW AND CONFIGURATION FILES THAT BARELY WORK!**
 
 ## Installation
 
