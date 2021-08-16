@@ -13,7 +13,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-cat /home/enzi/.cache/wal/sequences
+cat /home/`whoami`/.cache/wal/sequences
 
 
 
@@ -32,10 +32,13 @@ alias search='yay -Ss'
 alias python='python3'
 alias p='python3'
 alias upgrade='sudo pacman -Syyu'
-alias todo='cat /home/`whoami`/.fuck.txt'
+alias todo='cat /home/`whoami`/.todo.txt'
 # edittodo can be used to create  the hidden text file and can be manipulated easily
-alias edittodo='vim /home/`whoami`/.fuck.txt'
+alias edittodo='vim /home/`whoami`/.todo.txt'
 alias bruh='clear'
+alias mc='cd ~/Downloads && prime-run java -jar TLauncher-2.792_beta.jar && exit'
+alias govperf='echo "performance" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'
+alias gov='cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'
 
 # Spawns
 date
