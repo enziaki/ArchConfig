@@ -1,17 +1,18 @@
-# Extra after installing the base system
+#Extra after installing the base system
 
 
 You can use the arrow keys to navigate
 
 
 
-Okay so after you've run the script and now have some more basic packages installed, I wanted to let you know
-about some things.
+Okay so after you've run the script and now have some more basic packages
+installed, I wanted to let you know about some things.
 
 You will need an AUR helper like yay or trizen, I'd personally recommend yay.
 
-After you've installed yay, You can run this command for some packages that I'd like you to have because
-they are dependent on my Awesome( Window manager) rice. Although I will also make the script download dwm because why not.
+After you've installed yay, You can run this command for some packages that I'd
+like you to have because they are dependent on my Awesome( Window manager)
+rice. Although I will also make the script download dwm because why not.
 
 #Instructions to install yay
 
@@ -27,31 +28,19 @@ cd yay-git
 makepkg -si
 
 
-
 That's it, you've installed yay. Pat yourself on the back.
 
 #Now run this command
 
-yay -S i3lock-fancy-rapid-git tuxi-git  
+yay -S i3lock-fancy-rapid-git tuxi-git google-chrome myxer 
 
 
 functions: 
-i3lock-fancy-git = This is my screen locker
-tuxi-git = Maybe not even useful but I like it as it helps you google something straight from the terminal
-
-
-That's it, you've installed yay. Pat yourself on the back.
-
-#Now run this command
-
-yay -S i3lock-fancy-rapid-git 
-
-
-
-What do they do?
-
-i3lock-fancy-git = This is my screen locker
-
+i3lock-fancy-git = This is my screen locker 
+tuxi-git = Maybe not even useful but I like it as it helps you google something straight from the
+terminal
+google-chrome = so that you can attend classes without teams app using a gig of your ram
+myxer = this is the audio mixer that I use
 
 
 
@@ -75,17 +64,18 @@ Now you are ready to install DWM (The dynamic window manager)
 5> Same goes with ST as with DWM. You need to compile from the source
     i.e - `sudo make install`
     
- Done!
- Now you have installed everything that I wanted you to. These are just steps that you can comeback to at anytime. After you are done with the graphical session, open up a terminal and try these.
+Done! Now you have installed everything that I wanted you to. These are just
+steps that you can comeback to at anytime. After you are done with the
+graphical session, open up a terminal and try these.
  
  
  
  
 Now you've installed all the required packages.
 
-The only thing that remians is to start the GUI or Graphical session
+The only thing that remains is to start the GUI or Graphical session
 
-#type this into the terminal
+	**** Type this to start the GUI ****
 
 startx
 
