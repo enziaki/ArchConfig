@@ -158,7 +158,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+    awful.tag({ "www", "^_^", "@", ">_", "o_o", "|S|", "|\\|", "|M|", ">>" }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -254,8 +254,8 @@ globalkeys = gears.table.join(
      {description = "File manager", group = "Custom"}),
 
      --google chrome for teams
-    awful.key({ modkey, }, "t", function () awful.spawn.with_shell("google-chrome-stable")    end,
-     {description = "Chrome/Teams", group = "Custom"}),
+   -- awful.key({ modkey, }, "t", function () awful.spawn.with_shell("google-chrome-stable")    end,
+    -- {description = "Chrome/Teams", group = "Custom"}),
 
 
 
@@ -319,7 +319,7 @@ globalkeys = gears.table.join(
         {description = "go back", group = "client"}),
 
     -- Standard program
-    awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
+    awful.key({ modkey,           }, "t", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
@@ -618,7 +618,7 @@ client.connect_signal("focus", function(c)
                            end)
 client.connect_signal("unfocus", function(c)
                                 c.border_color = beautiful.border_normal
-                                c.opacity = 0.75
+                                c.opacity = 0.6
                              end)
 
 
@@ -627,9 +627,11 @@ client.connect_signal("unfocus", function(c)
 --
 -- Shell spawn
 awful.spawn.with_shell("nitrogen --restore")
-awful.spawn.with_shell("multiload-ng-systray")
+-- For kde connect you gotta initialize the dbus interface first. That is why it has two spawn commands
+awful.spawn.with_shell("/usr/lib/kdeconnectd")
+awful.spawn.with_shell("/usr/bin/kdeconnect-indicator")
 awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn.with_shell("pnmixer")
 awful.spawn.with_shell("nm-applet")
-awful.spawn.with_shell("compton -b")
+awful.spawn.with_shell("picom --experimental-backends")
 awful.spawn.with_shell("parcellite")
