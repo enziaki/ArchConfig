@@ -33,4 +33,6 @@ Picom must be enabled in the `.xinitrc` with `picom --experimental-backend` to u
 picom --experimental-backends &
 
 ```
+## End result
 
+![End result should look something like this.](https://github.com/enziaki/for_ketsu/blob/main/Images/AwesomeRiceImage.png "Awesome (no pun intended) Rice")
