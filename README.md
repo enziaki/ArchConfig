@@ -9,7 +9,7 @@ Enter these into the terminal:
 **Before executing the script make sure that `multilib` in included in the
 `/etc/pacman.conf` like shown. Otherwise the script will fail.**
 
-![pacman] (https://github.com/enziaki/for_ketsu/blob/main/Images/pacmanconf.png "How /etc/pacman.conf should be. Remove the #")
+![pacman](https://github.com/enziaki/for_ketsu/blob/main/Images/pacmanconf.png "How /etc/pacman.conf should be. Remove the #")
 
 ```
 git clone https://github.com/enziaki/for_ketsu
