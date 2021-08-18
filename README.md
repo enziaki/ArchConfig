@@ -7,9 +7,9 @@ A simple install script that installs basic apps on Arch/Artix Linux after the b
 Enter these into the terminal:
 
 **Before executing the script make sure that `multilib` in included in the
-`/etc/pacman.conf` Like shown. Otherwise the script will fail.**
+`/etc/pacman.conf` like shown. Otherwise the script will fail.**
 
-
+![pacman.conf.]("https://github.com/enziaki/for_ketsu/blob/main/Images/pacmanconf.png "How /etc/pacman.conf should be. Remove the #")
 
 ```
 git clone https://github.com/enziaki/for_ketsu
@@ -45,6 +45,9 @@ picom --experimental-backends &
 ## TODO
 
 > Change the workflow to DWM instead of Awesome.\
+
 > DWM patching with the patches and window swallowing.\
+
 > Moving to wayland and things that are dependent on Xorg using Xwayland.\
-> Using pipewire instead of pulseaudio.\
+
+> Using pipewire instead of pulseaudio.
