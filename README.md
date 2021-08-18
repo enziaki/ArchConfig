@@ -44,10 +44,10 @@ picom --experimental-backends &
 
 ## TODO
 
-> Change the workflow to DWM instead of Awesome.
+> [] Change the workflow to DWM instead of Awesome.
 
-> DWM patching with the patches and window swallowing.
+> [] DWM patching with the patches and window swallowing.
 
-> Moving to wayland and things that are dependent on Xorg using Xwayland.
+> [] Moving to wayland and things that are dependent on Xorg using Xwayland.
 
-> Using pipewire instead of pulseaudio.
+> [] Using pipewire instead of pulseaudio.
