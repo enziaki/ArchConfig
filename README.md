@@ -4,18 +4,18 @@ A simple install script that installs basic apps on Arch/Artix Linux after the b
 
 ## Installation
 
-Enter these into the terminal:
 
 **Before executing the script make sure that `multilib` in included in the
 `/etc/pacman.conf` like shown. Otherwise the script will fail.**
 
 ![pacman](https://github.com/enziaki/for_ketsu/blob/main/Images/pacmanconf.png "How /etc/pacman.conf should be. Remove the #")
 
+Enter these into the terminal:
 ```
 git clone https://github.com/enziaki/for_ketsu
 cd for_ketsu
-sudo chmod +x pacinst.sh
-./pacinst.sh
+sudo chmod +x install.sh
+./install.sh
 ```
 
 
