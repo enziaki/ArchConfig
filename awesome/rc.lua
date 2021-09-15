@@ -630,6 +630,8 @@ awful.spawn.with_shell("nitrogen --restore")
 -- For kde connect you gotta initialize the dbus interface first. That is why it has two spawn commands
 awful.spawn.with_shell("/usr/lib/kdeconnectd")
 awful.spawn.with_shell("/usr/bin/kdeconnect-indicator")
+ -- For bluetooth
+awful.spawn.with_shell("blueberry-tray")
 awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn.with_shell("pnmixer")
 awful.spawn.with_shell("nm-applet")

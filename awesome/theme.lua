@@ -1,4 +1,4 @@
--------------------------
+---------------------------
 -- Default awesome theme --
 ---------------------------
 
@@ -13,11 +13,11 @@ local theme = {}
 
 theme.font          = "System-ui Bold 8"
 
-theme.bg_normal     = "#000000"
-theme.bg_focus      = "#111111"
-theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#222222"
-theme.bg_systray    = "#000000" 
+theme.bg_normal     = "#1d2021"
+theme.bg_focus      = "#333333"
+theme.bg_urgent     = "#ea6962"
+theme.bg_minimize   = "#a89984"
+theme.bg_systray    = theme.bg_normal
 
 theme.fg_normal     = "#aaaaaa"
 theme.fg_focus      = "#ffffff"
@@ -27,8 +27,14 @@ theme.fg_minimize   = "#ffffff"
 theme.useless_gap   = dpi(0)
 theme.border_width  = dpi(2)
 theme.border_normal = "#000000"
-theme.border_focus  = "#333333"
+theme.border_focus  = "#535d6c"
 theme.border_marked = "#91231c"
+
+--Notification theming
+theme.notification_bg = "#1d2021"
+theme.notification_width = 320
+theme.notification_height = 128
+theme.notification_opacity = 0.85
 
 -- There are other variable sets
 -- overriding the default one when
@@ -41,24 +47,7 @@ theme.border_marked = "#91231c"
 -- prompt_[fg|bg|fg_cursor|bg_cursor|font]
 -- hotkeys_[bg|fg|border_width|border_color|shape|opacity|modifiers_fg|label_bg|label_fg|group_margin|font|description_font]
 -- Example:
-theme.hotkeys_bg_opacity = 1.0
-
-
---[[Tasklist (Making mid portion of the wibar transparent)
-theme.tasklist_bg_focus = "#22222207"
-theme.tasklist_fg_focus = "#22222207"
-]]
-
-
---Taglist
---[[theme.taglist_bg_empty = "#222222"
-	theme.taglist_bg_occupied = "#222222"
-theme.taglist_bg_focus = "#333333"
-
-]]
---mytextclock
-
-
+--theme.taglist_bg_focus = "#ff0000"
 
 -- Generate taglist squares:
 local taglist_square_size = dpi(4)
@@ -74,12 +63,6 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 -- notification_[bg|fg]
 -- notification_[width|height|margin]
 -- notification_[border_color|border_width|shape|opacity]
-
---Notification themeing
-theme.notification_bg = "#000000"
-theme.notification_width = 320
-theme.notification_height = 128 
-theme.notification_opacity = 0.85 
 
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
