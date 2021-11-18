@@ -50,7 +50,7 @@ beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 beautiful.useless_gap = 5 
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
-editor = os.getenv("EDITOR") or "nano"
+editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -253,13 +253,8 @@ globalkeys = gears.table.join(
     awful.key({ modkey, }, "f", function () awful.spawn.with_shell("nautilus")    end,
      {description = "File manager", group = "Custom"}),
 
-     --google chrome for teams
-   -- awful.key({ modkey, }, "t", function () awful.spawn.with_shell("google-chrome-stable")    end,
-    -- {description = "Chrome/Teams", group = "Custom"}),
 
 
-
-     
      -- Screenlocker
      
     awful.key({ modkey, "Shift"  }, "Escape", function () awful.spawn.with_shell("i3lock-fancy-rapid 9 30")    end,
@@ -268,7 +263,7 @@ globalkeys = gears.table.join(
 
      --rofi 
     awful.key({ modkey, }, "/", function () awful.spawn.with_shell("rofi -show run")    end,
-     {description = "dmenu", group = "Custom"}),
+     {description = "Rofi Launcher", group = "Custom"}),
  
 
 
