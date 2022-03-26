@@ -13,7 +13,7 @@ touch ~/.zsh_history
 chsh -s $(which zsh)
 
 #Copying the config files to their destined places
-mkdir ~/.config/awesome/ ~/.config/picom/ ~/.confif/kitty/
+mkdir ~/.config/awesome/ ~/.config/picom/ ~/.config/kitty/
 
 #Copying the awesome dotfile (just the config because theme is optional)
 cp awesome/rc.lua ~/.config/awesome/
