@@ -14,7 +14,7 @@ Enter these into the terminal:
 ```
 git clone https://github.com/enziaki/for_ketsu
 cd for_ketsu
-sudo chmod +x install.sh
+chmod +x install.sh
 ./install.sh
 ```
 
