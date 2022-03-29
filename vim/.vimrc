@@ -12,7 +12,13 @@ let &t_ut=''
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-autoformat/vim-autoformat'
-Plug 'vim-syntastic/syntastic'
 Plug 'prettier/vim-prettier', { 'do': 'yarn-install'}
 Plug 'morhetz/gruvbox'
 call plug#end()
+
+
+" The escape. Copied from kami.
+autocmd VimEnter * silent !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+autocmd VimLeave * silent !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+
+

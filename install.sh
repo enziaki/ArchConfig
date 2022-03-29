@@ -1,9 +1,9 @@
 
 sudo pacman -Syyu xorg-xrandr xorg-xsetroot nvidia-dkms parcellite nomacs rust xfce4-power-manager xfce4-screenshooter cargo-bloat \
-ttf-font-awesome pavucontrol volumeicon awesome feh pulseaudio pulseaudio-alsa xorg xorg-xinit xorg-server steam wine nvidia nvidia-prime \
+ttf-font-awesome pipewire awesome feh xorg xorg-xinit xorg-server steam wine nvidia nvidia-prime \
 nvidia-utils nvidia-settings mesa-demos wget udisks2 gvfs gvfs-mtp nautilus kitty bashtop firefox youtube-dl xterm vlc gvim unzip file-roller\
 unrar thermald tlp scrot rofi nitrogen picom ntfs-3g alsa-utils neofetch lolcat handbrake gimp figlet playerctl kdeconnect sshfs ttf-sazanami \
-zsh acpi python lxappearance libreoffice-fresh dunst chromium code htop java8-openjfx jdk8-openjdk jre8-openjdk jre8-openjdk-headless \
+zsh acpi python lxappearance libreoffice-fresh dunst code htop java8-openjfx jdk8-openjdk jre8-openjdk jre8-openjdk-headless \
 lib32-nvidia-utils mpv network-manager-applet noto-fonts-emoji sxiv aarch64-linux-gnu-gcc arm-none-eabi-gcc blueberry xfce4-settings ttf-fira-sans\
 ttf-fira-code otf-fira-mono otf-fantasque-sans-mono ttf-fantasque-sans-mono bluez-utils
 
@@ -43,8 +43,14 @@ wget https://dl.suckless.org/st/st-0.8.4.tar.gz
 tar -xpvf dwm-6.2.tar.gz
 tar -xpvf st-0.8.4.tar.gz
 
-# Cloning yay-git 
-git clone https://aur.archlinux.org/yay-git.git
+# Cloning paru (my package manager)
+git clone https://aur.archlinux.org/paru.git
+cd paru && makepkg -si
+cd ../
+
+# needed paru packages
+paru -Syy discord-cananry-electron-bin i3lock-fancy-rapid-git google-chrome myxer
+
 
 #For installation refer to extra.txt
 echo "Opening more install instructions..."
