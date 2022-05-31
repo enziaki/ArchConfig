@@ -22,6 +22,10 @@ chsh -s $(which zsh)
 #Copying the config files to their destined places
 mkdir ~/.config/awesome/ ~/.config/picom/ ~/.config/kitty/
 
+#Making some folders for video conversion scripts that I use for davinci resolve
+mkdir -p ~/Videos/Scripts
+cp VideoScripts/*.sh ~/Videos/Scripts
+
 #Copying the awesome dotfile (just the config because theme is optional)
 cp awesome/rc.lua ~/.config/awesome/
 
