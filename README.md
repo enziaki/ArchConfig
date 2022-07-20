@@ -1,4 +1,4 @@
-# For_Ketsu
+# ArchConfig
 
 A simple install script that installs basic apps on Arch/Artix Linux after the base system install.
 
@@ -12,8 +12,8 @@ A simple install script that installs basic apps on Arch/Artix Linux after the b
 
 Enter these into the terminal:
 ```
-git clone https://github.com/enziaki/for_ketsu
-cd for_ketsu
+git clone https://github.com/enziaki/ArchConfig
+cd ArchConfig
 chmod +x install.sh
 ./install.sh
 ```
@@ -50,4 +50,4 @@ picom --experimental-backends &
 
 > [] Moving to wayland and things that are dependent on Xorg using Xwayland.
 
-> [] Using pipewire instead of pulseaudio.
+> [DONE] Using pipewire instead of pulseaudio.
