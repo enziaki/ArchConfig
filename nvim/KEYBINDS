@@ -1,0 +1,54 @@
+- To install new language server
+    - `:LspInstall <name>`
+    - `:LspInstallInfo` -> For more info and stuff
++ After installing language server, set it up in `user/lua/lsp/settings`
+
++ Fuzzy searching
+    - `:Telescope find_files` `Ctrl f`
+    - Also supprots language server
+    - `:Telescope lsp_*`
+
++ Install syntax hilighting (Tree sitters)
+    - `:TSInstall <name>`
+	- `:TSHighlightCaptureUnderCursor` => Good for color scheme development
+	- `:TSPlayground` => :D
+
++ Completion
+    - `Ctrl-Space` => Normal Completion
+    - `Ctrl-K` => Function param help
+
++ Comments
+    - gcc => Single line 
+    - Select and gc -> visual block
+
++ Formatting
+    - `:Format`
+
++ Nvim tree
+    - `:NvimTreeToggle`
+    - new file `a`
+    - delete file `d`
+    - rename `r`
+
++ Terminal
+    - `Ctrl \`
+	- `:LazyGit` => `<leader>`g
+	- NUM + `Ctrl \` -> horizontal terminal number 
+	- NUM `<leader>t`  -> same as above but vertical
+	- `<leader>`T => Toggles all terminals hide or open
+
+
++ Increase window size
+    - `Ctrl UP`
+    - `Ctrl Down`
+
++ Move windows
+    - `Ctrl Alt j/k/l/h`
+
++ Open tree
+	- `Ctrl t` -> toggles nvimtree
+
++ Moving between buffers
+	- `L` `(Shift + l)` -> to right
+	- `H` `(Shift + h)` -> to left
+	- `D` `(Shift + D)` -> :bd

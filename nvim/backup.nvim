@@ -1,0 +1,67 @@
+" TODO: Switch to Packer.nvim
+
+
+" Plug Extensions
+" =====================================
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+
+" Colors stuff
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+Plug 'rebelot/kanagawa.nvim'
+Plug 'kyazdani42/nvim-web-devicons' " Icons
+
+Plug 'feline-nvim/feline.nvim' " Bar
+
+" Terminal
+Plug 'akinsho/toggleterm.nvim', {'tag': 'v1.*'}
+
+" Git stuff
+Plug 'lewis6991/gitsigns.nvim' 
+
+call plug#end()
+" =====================================
+
+" =============================
+" Color Scheme
+let g:catppuccin_flavour = "mocha"
+" colorscheme catppuccin
+colorscheme kanagawa
+" =============================
+
+" Keybinds
+" ==========================================
+
+" Convert CapsLock to Esc
+autocmd VimEnter * silent !esc-capslock.sh 1 
+autocmd VimLeave * silent !esc-capslock.sh 0
+
+" Navigate between windows
+nnoremap <C-A-h> <C-w>h
+nnoremap <C-A-j> <C-w>j
+nnoremap <C-A-k> <C-w>k
+nnoremap <C-A-l> <C-w>l
+
+" Map Esc to terminal mode
+tnoremap <Esc> <C-\><C-n>
+
+
+" ==========================================
+
+
+" Basic settings
+" ================================
+filetype plugin indent on
+set nowrap
+set relativenumber
+set autoindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set mouse+=a
+let mapleader = ","
+
+" Cursor stuff
+set guicursor=
+
+" ================================
+

@@ -20,7 +20,7 @@ touch ~/.zsh_history
 chsh -s $(which zsh)
 
 #Copying the config files to their destined places
-mkdir ~/.config/awesome/ ~/.config/picom/ ~/.config/kitty/
+mkdir ~/.config/awesome/ ~/.config/picom/ ~/.config/alacritty
 
 #Making some folders for video conversion scripts that I use for davinci resolve
 mkdir -p ~/Videos/Scripts
@@ -32,10 +32,9 @@ cp awesome/rc.lua ~/.config/awesome/
 #copying the picom config
 cp picom/picom.conf ~/.config/picom/
 
-#copying the kitty config and changing the color to gruvbox
-cp kitty/kitty.conf ~/.config/kitty/
-cp kitty/gruvbox.conf ~/.config/kitty/
-ln -sf ~/.config/kitty/gruvbox.conf ~/.config/kitty/theme.conf
+
+#copying the alacritty config
+cp Alacritty/alacritty.yml ~/.config/alacritty
 
 #Vim and it's files
 cp vim/.vimrc ~/
@@ -45,7 +44,7 @@ git clone https://aur.archlinux.org/paru.git
 ( cd paru && makepkg -si )
 
 # needed paru packages
-paru -Syy discord-cananry-electron-bin i3lock-fancy-rapid-git google-chrome myxer vim-plug
+paru -Syy davinci-resolve discord-cananry-electron-bin i3lock-fancy-rapid-git google-chrome myxer vim-plug
 
 # Copying xinitrc
 cp .xinitrc ~/
