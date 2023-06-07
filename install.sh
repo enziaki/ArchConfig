@@ -26,14 +26,14 @@ common(){
 
 archinstall(){
   echo "Installing for Arch Linux on user $(whoami)"
-  sudo pacman -Syyu xorg-xrandr xorg-xsetroot nvidia parcellite nomacs rust xfce4-power-manager xfce4-screenshooter cargo-bloat evince \
+  sudo pacman -Syyu xorg-xrandr xorg-xsetroot nvidia parcellite nomacs rust xfce4-power-manager cargo-bloat evince \
 ttf-font-awesome pipewire awesome feh xorg xorg-xinit xorg-server steam wine nvidia nvidia-prime \
-nvidia-utils nvidia-settings mesa-demos wget udisks2 gvfs gvfs-mtp nautilus kitty bashtop firefox youtube-dl xterm vlc gvim unzip file-roller \
+nvidia-utils nvidia-settings mesa-demos wget udisks2 gvfs gvfs-mtp nautilus kitty bashtop firefox youtube-dl xterm gvim unzip file-roller \
 unrar thermald tlp scrot rofi nitrogen picom ntfs-3g alsa-utils neofetch lolcat handbrake gimp figlet playerctl kdeconnect sshfs ttf-sazanami \
 zsh acpi python lxappearance libreoffice-fresh dunst code htop jdk8-openjdk jre8-openjdk jre8-openjdk-headless \
 lib32-nvidia-utils mpv network-manager-applet noto-fonts-emoji sxiv aarch64-linux-gnu-gcc arm-none-eabi-gcc blueberry xfce4-settings ttf-fira-sans \
-ttf-fira-code otf-fira-mono otf-fantasque-sans-mono ttf-fantasque-sans-mono bluez-utils bottom \ 
-opencl-nvidia
+ttf-fira-code otf-fira-mono otf-fantasque-sans-mono ttf-fantasque-sans-mono bottom ttf-jetbrains-mono-nerd ttf-jetbrains-mono  \ 
+opencl-nvidia flameshot alacritty
 
 
 #Copying the config files to their destined places
@@ -50,10 +50,16 @@ opencl-nvidia
   ( cd paru && makepkg -si )
 
 # needed paru packages
-  paru -Syy davinci-resolve discord-cananry-electron-bin i3lock-fancy-rapid-git google-chrome myxer vim-plug
+  paru -Syy davinci-resolve i3lock-fancy-rapid-git google-chrome myxer vim-plug
 
 # Copying xinitrc
   cp .xinitrc ~/
+
+# Cloning DWM
+git clone https://github.com/enziaki/dwm-enzi
+( cd dwm-enzi && sudo make clean install)
+( cd dwm-enzi/dwmblocks && sudo make clean install )
+
 }
 
 debinstall(){
