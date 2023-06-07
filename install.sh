@@ -22,6 +22,7 @@ common(){
 #Vim and it's files
   cp vim/.vimrc ~/
 
+
 }
 
 archinstall(){
@@ -59,6 +60,10 @@ opencl-nvidia flameshot alacritty
 git clone https://github.com/enziaki/dwm-enzi
 ( cd dwm-enzi && sudo make clean install)
 ( cd dwm-enzi/dwmblocks && sudo make clean install )
+
+# Copying scripts to .local/bin/
+( cd Scripts && chmod +x battery clock memory volume)
+cp Scripts/* ~/.local/bin/
 
 }
 

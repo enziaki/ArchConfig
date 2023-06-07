@@ -76,7 +76,3 @@ alias cls='clear && ls'
 alias ls='ls --color'
 # Spawns
 date
-
-# for steam proton
-export STEAM_COMPAT_DATA_PATH=$HOME/Misc/proton
-export PATH="/home/einze/.local/bin:$PATH"

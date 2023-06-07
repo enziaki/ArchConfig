@@ -21,33 +21,33 @@ chmod +x install.sh
 
 ## Awesome WM theme and config
 
-The theme file needs to be copied in `/usr/share/awesome/themes/default/` while
-the config file needs to be copied into `~/.config/awesome/` This will already
-be done by the script but only the `rc.lua` part. Themes has various ways of
-installing it.\
-*This is not the only way to do this and this is not even the
-recommended way to do this.* *This will override your theme.lua that was given
-by default on the system.*
+If you want to use Awesome as your window manager, remove `exec dwm` with `exec
+awesome` in `.xinitrc` and remove `dwmblocks &`. The theme file needs to be
+copied in `/usr/share/awesome/themes/default/` while the config file needs to
+be copied into `~/.config/awesome/` This will already be done by the script but
+only the `rc.lua` part. Themes has various ways of installing it.\ *This is not
+the only way to do this and this is not even the recommended way to do this.*
+*This will override your theme.lua that was given by default on the system.*
 
 **Use this with caution!**
+## DWM
 
-## Picom
+My build of [DWM](https://github.com/enziaki/dwm-enzi) along with Dwmblocks gets cloned by the script and is already present in `.xinitrc`
+DWM is the default window manager along with alacritty as the default term
 
-Picom must be enabled in the `.xinitrc` with `picom --experimental-backends` to use blur like so
-```
-picom --experimental-backends &
-
-```
 ## End result
++ This is the default rice with DWM and alacritty
+![End result with DWM](./Images/DWMrice.png)
 
++ This is the rice if you use Awesome
 ![End result should look something like this.](https://github.com/enziaki/for_ketsu/blob/main/Images/AwesomeRiceImage.png "Awesome (no pun intended) Rice")
 
 ## TODO
 
-> [] Change the workflow to DWM instead of Awesome.
+> [DONE] Change the workflow to DWM instead of Awesome.
 
-> [] DWM patching with the patches and window swallowing.
+> [DONE] DWM patching with the patches and window swallowing.
 
-> [] Moving to wayland and things that are dependent on Xorg using Xwayland.
+> [Moving to Gamescope] Moving to wayland and things that are dependent on Xorg using Xwayland.
 
 > [DONE] Using pipewire instead of pulseaudio.
