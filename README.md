@@ -1,6 +1,6 @@
 # ArchConfig
 
-A simple install script that installs basic apps on Arch/Artix Linux after the base system install.
+A simple install script that installs basic apps on Arch or Debian systems
 
 ## Installation
 
