@@ -1,5 +1,7 @@
 # ArchConfig
 
+### Note: There some packages in the `install.sh` for Arch Linux that don't return a definite package location for pacman to install. This will result in a Failed script and half copied broken configs. Removing some packages completely resolves this issue. After correction, this section will be moved to TODO
+
 A simple install script that installs basic apps on Arch or Debian systems
 
 ## Installation
