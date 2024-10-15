@@ -1,7 +1,5 @@
 # ArchConfig
 
-### Note: There some packages in the `install.sh` for Arch Linux that don't return a definite package location for pacman to install. This will result in a Failed script and half copied broken configs. Removing some packages completely resolves this issue. After correction, this section will be moved to TODO
-
 A simple install script that installs basic apps on Arch or Debian systems
 
 ## Installation
@@ -13,10 +11,20 @@ A simple install script that installs basic apps on Arch or Debian systems
 ![pacman](https://github.com/enziaki/for_ketsu/blob/main/Images/pacmanconf.png "How /etc/pacman.conf should be. Remove the #")
 
 Enter these into the terminal:
+
+If you just want to copy the config files, there is a `--config-only` flag that does just that.
+```bash
+./install.sh --config-only
 ```
+For complete configuration:
+
+```bash
 git clone https://github.com/enziaki/ArchConfig
+
 cd ArchConfig
+
 chmod +x install.sh
+
 ./install.sh
 ```
 
@@ -53,3 +61,5 @@ DWM is the default window manager along with alacritty as the default term
 > [Moving to Gamescope] Moving to wayland and things that are dependent on Xorg using Xwayland.
 
 > [DONE] Using pipewire instead of pulseaudio.
+
+> [DONE] Note: There are some packages in the `install.sh` for Arch Linux that don't return a definite package location for pacman to install. This will result in a Failed script and half copied broken configs. Removing some packages completely resolves this issue. After correction, this section will be moved to TODO 
