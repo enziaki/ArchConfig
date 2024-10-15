@@ -72,6 +72,7 @@ debinstall(){
 
 if [ $1 = "--config-only" ]; then
 	common
+fi
 
 if [ $os = "ID=arch" ]; then
   archinstall
